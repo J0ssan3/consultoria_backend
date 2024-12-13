@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100..900&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>InfoCode</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="img/logo.png" class="logo" alt="Logo InfoCode"></h1>
+            <nav>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destaques</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <video class="video-background" autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos em HTML5.
+                </video>
+                <h1>InfoCode, transforme suas ideias em realidade</h1>
+                <p>Explore tecnologias como HTML5, CSS3, Python, Ruby com o melhor time de consultoria de desenvolvimento Web do país.</p>
+                <button>Saiba Mais</button>
+            </div>
+        </section>
+    
+        <section class="technologies">
+            <div>
+                <h2>Destaques:</h2>
+            </div>
+            <div class="technology">
+                <img src="img/html5-icon.png" alt="Ícone HTML5">
+                <h3>HTML5</h3>
+            </div>
+            <div class="technology">
+                <img src="img/css3-icon.png" alt="Ícone CSS3">
+                <h3>CSS3</h3>
+            </div>
+            <div class="technology">
+                <img src="img/python-icon.png" alt="Ícone Python">
+                <h3>Python</h3>
+            </div>
+            <div class="technology">
+                <img src="img/ruby-icon.png" alt="Ícone Ruby">
+                <h3>Ruby</h3>
+            </div>
+            <div class="technology">
+                <img src="img/php-icon.png" alt="Ícone PHP">
+                <h3>PHP</h3>
+            </div>
+            <div class="technology">
+                <img src="img/swift-icon.png" alt="Ícone Swift">
+                <h3>Swift</h3>
+            </div>
+        </section>
+        <section class="consultoria-section">
+            <div class="consultoria-container">
+                <h2>Nossos Serviços de Consultoria</h2>
+                <p>Oferecemos soluções personalizadas para o desenvolvimento web, garantindo qualidade e resultados excepcionais.</p>
+                <table class="consultoria-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo de Consultoria</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Desenvolvimento Front-End</td>
+                            <td>Criamos interfaces interativas e responsivas, utilizando tecnologias como HTML5, CSS3 e JavaScript, para oferecer a melhor experiência ao usuário.</td>
+                        </tr>
+                        <tr>
+                            <td>Desenvolvimento Back-End</td>
+                            <td>Implementamos soluções robustas e escaláveis para o lado do servidor, garantindo segurança e performance em linguagens como Python e Ruby.</td>
+                        </tr>
+                        <tr>
+                            <td>Otimização de Sites</td>
+                            <td>Realizamos análises e ajustes para melhorar a velocidade, acessibilidade e SEO, garantindo que seu site alcance mais usuários e melhore sua posição nos mecanismos de busca.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>        
+        <section class="form-container">
+            <h1>Contato</h1>
+            <div class="form-wrapper">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+        
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <div>
+            <p>&copy; 2024 InfoCode, consultória de desenvolvimento web. Todos os direitos reservados para Jossane Cardoso e Suzana Duarte.</p>
+        </div>
+    </footer>
+</body>
+</html>

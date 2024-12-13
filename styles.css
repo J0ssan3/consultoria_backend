@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+      background-color: #000; /* Abreviação de cores hexadecimais */
+      padding: 5px 0;
+}
+
+.caixa {
+      position: relative;
+      max-width: 940px; /* Melhor prática para layouts responsivos */
+      margin: 0 auto;
+}
+
+.logo {
+     width: 80px;
+}
+
+nav {
+   position: absolute;
+   top: 0; /* Definido em relação ao topo do header */
+   right: 0;
+   margin-top: 20px; /* Adicionado espaçamento para afastar do topo */
+}
+
+nav ul {
+   list-style: none; /* Removido o marcador padrão */
+   padding: 0;
+   margin: 0;
+}
+
+nav li {
+   display: inline-block; /* Melhor alinhamento em layouts */
+   margin-left: 15px;
+}
+
+nav a {
+   color: #fff; /* Abreviação para cores brancas */
+   font-size: 22px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   text-decoration: underline; /* Adicionado efeito de hover */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #e05500;
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background: #141e30;
+}
+
+.technologies h2{
+    position: relative;
+    max-width: 940px; /* Melhor prática para layouts responsivos */
+    margin: 0 0 0 auto;
+    font-size: 1.5em;
+    padding: 1px;
+    width: 120px;
+    text-align: center;
+}
+
+.technology {
+    margin: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.technology:hover {
+    transform: scale(1.1);
+}
+
+.technology img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.technology h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.consultoria-section {
+    background: #BBBBBB;
+    padding: 50px 20px;
+}
+
+.consultoria-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.consultoria-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.consultoria-container p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.consultoria-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: left;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.consultoria-table thead tr {
+    background: #2b2b2b;
+    color: #ffffff;
+}
+
+.consultoria-table th, .consultoria-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.consultoria-table tbody td {
+    color: #333; /* Cor mais escura para melhor contraste */
+}
+
+.consultoria-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.consultoria-table tbody tr:hover {
+    background: #e0e0e0;
+}
+
+
+/* Container da seção */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #f2f2f2; /* Fundo cinza claro ao redor do formulário */
+    color: #333; /* Texto escuro */
+}
+
+/* Título */
+.form-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Wrapper do formulário com fundo cinza escuro */
+.form-wrapper {
+    background: #2b2b2b; /* Cinza escuro */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Estilo do formulário */
+.form-wrapper form {
+    background: #fff; /* Fundo branco do próprio formulário */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Grupo de inputs */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Inputs e textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Placeholder com contraste */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* Botão de envio */
+input[type="submit"] {
+    background: #007bff; /* Azul padrão */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #0056b3; /* Tom mais escuro no hover */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 30px 15px;
+    }
+
+    .form-container h1 {
+        font-size: 2em;
+    }
+
+    .form-wrapper {
+        padding: 20px;
+    }
+
+    .form-wrapper form {
+        padding: 20px;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}

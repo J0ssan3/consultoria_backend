@@ -1,0 +1,18 @@
+{
+  "name": "consultoria-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "name": "Teste",
+    "email": "teste@email.com",
+    "message": "Mensagem de teste"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
